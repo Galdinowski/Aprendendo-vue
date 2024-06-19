@@ -20,11 +20,21 @@
             setTimeout(()=>{
                 this.nome = "Arthur"
             },2000)
+            this.lifeCycle()
+            
             
         },
         mounted()
         {
             this.nome = "Lazaro"
+            this.lifeCycle()
+        },
+        methods:{
+            lifeCycle()
+            {
+                console.log("Executou")
+            }
+            
         }
 
     }
