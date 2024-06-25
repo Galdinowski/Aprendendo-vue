@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <PrimeiroComponente />
     <p>O dado de app eh: {{ testando }}</p>
     <LifeCycle/>
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import LifeCycle from './components/LifeCycle.vue'
 import Pessoa from './components/Pessoa.vue'
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
@@ -16,7 +18,14 @@ import PrimeiroComponente from './components/PrimeiroComponente.vue'
     components:{
             PrimeiroComponente,
             LifeCycle,
-            Pessoa
+            Pessoa,
+            Header
         }
   }
 </script>
+
+<style>
+  body{
+    background-color: rgb(26, 92, 97);
+  }
+</style>
