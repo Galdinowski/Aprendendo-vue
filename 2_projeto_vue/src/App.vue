@@ -4,7 +4,8 @@
     <PrimeiroComponente />
     <p>O dado de app eh: {{ testando }}</p>
     <LifeCycle/>
-    <Pessoa/>
+    <Pessoa/> 
+
   </div>
 </template>
 
@@ -19,8 +20,10 @@ import PrimeiroComponente from './components/PrimeiroComponente.vue'
             PrimeiroComponente,
             LifeCycle,
             Pessoa,
-            Header
-        }
+            Header,
+            
+        },
+
   }
 </script>
 
@@ -28,4 +31,5 @@ import PrimeiroComponente from './components/PrimeiroComponente.vue'
   body{
     background-color: rgb(26, 92, 97);
   }
+
 </style>
